@@ -22,4 +22,6 @@ routes.get("/app/dashboard", (req, res) => {
   res.render("dashboard");
 });
 
+routes.get("/app/logout", SessionController.destroy);
+
 module.exports = routes;
